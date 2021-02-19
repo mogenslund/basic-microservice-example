@@ -11,6 +11,7 @@
                  [io.pedestal/pedestal.service "0.5.7"]
                  [io.pedestal/pedestal.jetty "0.5.7"]
 
+                 [mogenslund/liquid "2.0.8"]
                  [http-kit "2.3.0"]
                  [com.stuartsierra/component "0.4.0"]
                  [prismatic/schema "1.1.12"]
@@ -27,7 +28,8 @@
             "lint" ["with-profile" "+clj-kondo" "run" "-m" "clj-kondo.main" "--lint" "src" "--lint" "src:test"]
             "dev" ["with-profile" "+dev" "repl"]}
   :profiles {:clj-kondo {:dependencies [[clj-kondo "RELEASE"]]}
-             :dev {:aliases { "run-dev" ["trampoline" "run" "-m" "basic-microservice-example.server/run-dev"] }
+             :dev {:aliases { "run-dev" ["trampoline" "run" "-m" "basic-microservice-example.server/run-dev"]
+                              "run-liquid" ["trampoline" "run" "-m" "basic-microservice-example.server/run-liquid"]}
                    :repl-options {:init-ns user}
                    :source-paths ["dev"]
                    :dependencies [[midje "1.9.9"]

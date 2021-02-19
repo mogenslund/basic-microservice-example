@@ -8,7 +8,7 @@
 
 (defn home-page
   [request]
-  (ring-resp/response {:message "Hello World!"}))
+  (ring-resp/response {:message "Hello World 1!"}))
 
 (defn create-account
   [{{:keys [customer-id]} :edn-params
