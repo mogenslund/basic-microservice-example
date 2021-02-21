@@ -1,0 +1,24 @@
+{:deps {
+        org.clojure/core.async {:mvn/version "1.0.567"}
+        org.clojure/core.rrb-vector {:mvn/version "0.0.14"}
+        io.pedestal/pedestal.service {:mvn/version "0.5.7"}
+        io.pedestal/pedestal.jetty {:mvn/version "0.5.7"}
+
+        http-kit {:mvn/version "2.3.0"}
+        com.stuartsierra/component {:mvn/version "0.4.0"}
+        prismatic/schema {:mvn/version "1.1.12"}
+        cheshire {:mvn/version "5.9.0"}
+        io.aviso/pretty {:mvn/version "0.1.37"}
+
+        ch.qos.logback/logback-classic {:mvn/version "1.2.3" :exclusions [org.slf4j/slf4j-api]}
+        org.slf4j/jul-to-slf4j {:mvn/version "1.7.28"}
+        org.slf4j/jcl-over-slf4j {:mvn/version "1.7.28"}
+        org.slf4j/log4j-over-slf4j {:mvn/version "1.7.28"}
+        midje {:mvn/version "1.9.9"}
+        nubank/selvage {:mvn/version "0.0.1"}
+        nubank/matcher-combinators {:mvn/version "1.2.1"}
+        org.clojure/tools.namespace {:mvn/version "0.3.1"}
+        org.clojure/java.classpath {:mvn/version "0.3.0"}
+        criterium {:mvn/version "0.4.5"}
+        cider/orchard {:mvn/version "0.5.1"}
+        io.pedestal/pedestal.service-tools {:mvn/version "0.5.7"}}} 
